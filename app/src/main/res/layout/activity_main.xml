@@ -1,101 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.dariomolina.life.MainActivity">
 
 
-    <ImageView
-        android:id="@+id/image"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="5dp"
-        android:gravity="top"
-        android:src="@drawable/lifeIsForEveryone" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.dariomolina.life.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/about"
-        android:paddingTop="5dp"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textSize="22dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/intro"
-        android:paddingTop="5dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"/>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:src="@drawable/life_for_everyone" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/testimonial"
-        android:paddingTop="5dp"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textSize="22dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/testimonial2"
-        android:paddingTop="5dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/testimonial1"
-        android:layout_marginTop="20dp"
-        android:paddingTop="5dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:textSize="10dp"
-            android:layout_width="70dp"
-            android:minWidth="0dp"
-            android:layout_height="wrap_content"
-            android:text="About Us"/>
-
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:minWidth="0dp"
-            android:textSize="10dp"
-            android:text="Enroll"/>
-
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="0dp"
-            android:text="STEAM"/>
+            android:text="@string/about"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="0dp"
-            android:text="Supporters"/>
+            android:text="@string/intro"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="0dp"
-            android:text="Get Involved "/>
+            android:text="@string/testimonial"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testimonial2"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testimonial1"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/enroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:text="Enroll"/>
+
+            <Button
+                android:id="@+id/steam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:text="STEAM"/>
+
+            <Button
+                android:id="@+id/supporters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:text="Supporters"/>
+
+            <Button
+                android:id="@+id/involved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:text="Get Involved"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
