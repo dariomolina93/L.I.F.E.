@@ -9,11 +9,56 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:text="Enroll"
         android:gravity="center"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="26dp"
+        android:textColor="@color/colorText"
+        android:background="@color/colorBackground"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="11dp"
+        android:src="@mipmap/lifeinc_home" />
+
+    <TextView
+        android:id="@+id/who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enroll1"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:paddingLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enrollCost"
+        android:layout_marginTop="7dp"
+        android:textSize="15dp"
+        android:paddingLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enrollInfo"
+        android:layout_marginTop="7dp"
+        android:textSize="15dp"
+        android:paddingLeft="7dp"/>
+
+    <Button
+        android:id="@+id/enroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"/>
+
 
 
 

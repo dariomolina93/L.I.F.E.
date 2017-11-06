@@ -5,4 +5,9 @@
     <string name="testimonial">Testimonials</string>
     <string name="testimonial1">This is the place where I stopped being shy and started to be more outgoing. --Bryan J (Former student).</string>
     <string name="testimonial2">Life after school program has helped me greatly in my academic career. At the program I learned how to speak, read and write in English. The program also helped me understand various subjects as well with homework assignment.. --Isabel M (Former student).</string>
+    <string name="enroll1"> <b>Who is elgible:</b> Students currently enrolled in first grade through middle school.</string>
+    <string name='enrollCost'>Cost: Because of the generous support of L.I.F.E.’s financial partners, we are able to provide this resource free of charge for our students. However, we do require parent participation. Parents are asked to provide transportation to and from the center, attend several workshops, and occasionally bring healthy snacks.</string>
+    <string name="enrollInfo">If you want to receive more information from our director, please click on the button below. Your contact information will not be added to any lists, nor will it be shared or sold to any third party.</string>
+    <string name="supportInto">L.I.F.E., Inc. is a non-profit 501 (c) (3) corporation.<br></br>
+Major funding comes from Foundations in Salinas and Monterey, Agricultural Companies, various churches and their thrift stores, and individuals.</string>
 </resources>
