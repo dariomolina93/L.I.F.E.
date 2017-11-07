@@ -29,8 +29,18 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
         });
-        steam = (Button) findViewById(R.id.steam);
+
         supporters = (Button) findViewById(R.id.supporters);
+
+        supporters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent support = new Intent(getApplicationContext(),Supporters.class);
+                startActivity(support);
+                return;
+            }
+        });
+        steam = (Button) findViewById(R.id.steam);
         involved = (Button) findViewById(R.id.involved);
     }
 }

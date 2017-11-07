@@ -75,6 +75,7 @@ android:layout_height="wrap_content">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="0dp"
+                android:textSize="13dp"
                 android:text="Enroll"/>
 
             <Button
@@ -82,6 +83,7 @@ android:layout_height="wrap_content">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="0dp"
+                android:textSize="13dp"
                 android:text="STEAM"/>
 
             <Button
@@ -89,13 +91,15 @@ android:layout_height="wrap_content">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="0dp"
-                android:text="Supporters"/>
+                android:text="Sponsors"
+                android:textSize="13dp"/>
 
             <Button
                 android:id="@+id/involved"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="0dp"
+                android:textSize="13dp"
                 android:text="Get Involved"/>
 
         </LinearLayout>
