@@ -1,6 +1,8 @@
 package com.example.dariomolina.life;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
@@ -9,6 +11,10 @@ import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -96,42 +102,118 @@ public class STEAM extends AppCompatActivity {
             description.setText(Html.fromHtml(descriptions[i]));
             description.setPadding(23,20,23,20);
             layout.addView(description);
+
+            switch (i)
+            {
+                case 0:
+                {
+                    String uri = "@drawable/planting";  // where myresource (without the extension) is the file
+
+                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    ImageView image = new ImageView(this);
+
+                    Drawable res = getResources().getDrawable(imageResource);
+                    image.setImageDrawable(res);
+                    layout.addView(image);
+                    break;
+                }
+
+                case 1:
+                {
+                    String uri = "@drawable/made_code";  // where myresource (without the extension) is the file
+
+                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    ImageView image = new ImageView(this);
+
+                    Drawable res = getResources().getDrawable(imageResource);
+                    image.setImageDrawable(res);
+                    layout.addView(image);
+                    break;
+                }
+
+                case 4:
+                {
+                    String uri = "@drawable/league";  // where myresource (without the extension) is the file
+
+                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    ImageView image = new ImageView(this);
+
+                    Drawable res = getResources().getDrawable(imageResource);
+                    image.setImageDrawable(res);
+                    layout.addView(image);
+                    break;
+                }
+
+            }
         }
-/*
-        //urbanLink = (TextView) findViewById(R.id.urbanArts);
-        madeCode = (TextView) findViewById(R.id.madeCode);
-        madeCodeBody = (TextView) findViewById(R.id.madeCodeBody);
-        hourCode = (TextView) findViewById(R.id.hourCode);
-        hourCodeBody = (TextView) findViewById(R.id.hourCodeBody);
 
+        Button enroll = new Button(this);
+        enroll.setText("Enroll");
+        enroll.setMinWidth(0);
+        enroll.setTextSize(11);
 
+        Button supporters = new Button(this);
+        supporters.setText("Sponsors");
+        supporters.setMinWidth(0);
+        supporters.setTextSize(11);
 
-        layout = (LinearLayout) findViewById(R.id.layout);
+        Button home = new Button(this);
+        home.setText("Home");
+        home.setMinWidth(0);
+        home.setTextSize(11);
 
+        Button involved = new Button(this);
+        involved.setText("Get Involved");
+        involved.setMinWidth(0);
+        involved.setTextSize(10);
 
-        for(int i = 0; i < urls.length; i++)
+        enroll.setOnClickListener(new View.OnClickListener()
         {
+            @Override
+            public void onClick(View v) {
+                Intent enroll = new Intent(getApplicationContext(), Enroll.class);
+                startActivity(enroll);
+                return;
+            }
+        });
 
-        }
 
-        urbanLink.setText(removeUnderline(urls[0]));
-        urbanLink.setLinkTextColor(Color.parseColor("#2d5c88"));
-        urbanLink.setTextSize(20);
-        urbanLink.setMovementMethod(LinkMovementMethod.getInstance());
 
-        madeCode.setText(removeUnderline(urls[1]));
-        madeCode.setLinkTextColor(Color.parseColor("#2d5c88"));
-        madeCode.setTextSize(20);
-        madeCode.setMovementMethod(LinkMovementMethod.getInstance());
+        supporters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent support = new Intent(getApplicationContext(),Supporters.class);
+                startActivity(support);
+                return;
+            }
+        });
 
-        madeCodeBody.setText("Google’s fun and easy site called ‘Made W/ Code’ for helping girls learn coding!  Check it out by clicking on the title!\n" +
-                "\n" +
-                "For students today, coding is becoming an essential skill just like reading, writing and math. " +
-                " ‘Made W/ Code’ is an effort to get more girls involved in computer programming, whether it’s designing a " +
-                "LED dress, an outrageously accessorized selfie, helping Riley from Inside Out solve some of life’s little problems" +
-                " or solving a problem in their own neighborhood it’s all fun and easy and they are learning to code!  LIFE is proud to " +
-                "offer this experience to 4th – 8th grade girls");
-     */
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent steam = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(steam);
+                return;
+
+            }
+        });
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        params.gravity= Gravity.CENTER;
+        params.topMargin= 70;
+
+
+
+        LinearLayout layout2 = new LinearLayout(this);
+        layout2.setOrientation(LinearLayout.HORIZONTAL);
+        layout2.setLayoutParams(params);
+        layout.addView(layout2);
+        layout2.addView(home);
+        layout2.addView(enroll);
+        layout2.addView(supporters);
+        layout2.addView(involved);
+
     }
 
     private Spannable removeUnderline(String link)

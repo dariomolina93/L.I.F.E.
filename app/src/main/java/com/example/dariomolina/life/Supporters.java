@@ -54,7 +54,9 @@ public class Supporters extends AppCompatActivity implements View.OnClickListene
 
         LinearLayout layout2 = new LinearLayout(this);
 
-        layout2.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        params.gravity=Gravity.CENTER;
+        layout2.setLayoutParams(params);
         layout2.setOrientation(LinearLayout.HORIZONTAL);
 
         layout.addView(layout2);
@@ -65,6 +67,7 @@ public class Supporters extends AppCompatActivity implements View.OnClickListene
         home.setOnClickListener(this);
         home.setText("Home");
         home.setTextSize(11);
+
 
         enroll = new Button(this);
         enroll.setOnClickListener(this);
@@ -113,6 +116,7 @@ public class Supporters extends AppCompatActivity implements View.OnClickListene
         TextView vol = new TextView(this);
         LinearLayout.LayoutParams meters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         //meters.topMargin = 45;
+        meters.bottomMargin = 35;
         meters.gravity = Gravity.CENTER;
 
         vol.setText("Volunteers:");

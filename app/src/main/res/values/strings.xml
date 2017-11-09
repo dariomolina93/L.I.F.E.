@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">LIFE</string>
-    <string name="intro">Life Is For Everyone, Inc. [L.I.F.E.] is Supporting Safer Communities with a structured after-school program in East Salinas. Structured study programs are based on each student’s needs as communicated by their teacher or counselor (especially for ‘at-risk’ students).  Each day students receive healthy snacks upon arrival. L.I.F.E. provides academic support through daily tutoring, math lab twice a week, and additional lessons in vocabulary, reading, science, and social skills.</string>
+    <string name="app_name">LIFE Inc.</string>
+    <string name="intro">L.I.F.E. is an afterschool program that specializes in academic support, healthy snacks, and recreational opportunities. It operates from 3:00pm to 5:30pm Monday through Friday at the East Salinas Family Center. The loving, nurturing aspect of this environment helps build self esteem and encourages the students to excel at their studies and grow into contributing members of society.</string>
+    <string name="history">The L.I.F.E. program was founded in 1998 by several faith-based communities. Sandy and Pastor Frank Gomez developed and grew the East Salinas Family Center site program, which now has 45 to 50 students from up to 12 Salinas feeder schools.</string>
     <string name="about">About</string>
+    <string name="about2">Every day starts with healthy snacks. On Mondays, Tuesdays, Wednesdays, and Thursdays, L.I.F.E. assigns one tutor for each two or three students. A high school, college-age, or adult tutor lets each student know they care about his or her success. Students also learn positive life skills such as fairness, integrity, and honesty. All of our tutors are volunteers. The tutors and students work together on homework until 5:00pm. Then, from 5:00pm to 5:30pm, there are lessons on social skills, vocabulary, or science. During this time, students are encouraged to present on topics that interest them! Additional academic resources include Math Lab on Mondays, Wednesdays and Thursdays, reading tutors for our first, second, and third grade students, access to a library and student store, and field trips.</string>
+    <string name="about3">On Fridays from 3:15pm to 5:30pm, supervised recreational programs are provided. We also provide recreational programs during the summer break.</string>
+
     <string name="testimonial">Testimonials</string>
     <string name="testimonial1">This is the place where I stopped being shy and started to be more outgoing. --Bryan J (Former student).</string>
     <string name="testimonial2">Life after school program has helped me greatly in my academic career. At the program I learned how to speak,
@@ -16,5 +20,6 @@ Major funding comes from Foundations in Salinas and Monterey, Agricultural Compa
         When students have art in their curriculum, studies show it has a positive impact on their learning all other academic subjects too! The positive benefits of students and gardening have also been shown.  Research with participation in
         school-based gardens has shown positive impact on students such as improved social skills and increase in well-being. </string>
     <string name="madeCode"></string>
+    <string name="mission">Life Is For Everyone, Inc.[LIFE] an after school program, serves the East Salinas community by investing in youth’s educational, life and social development and partnering with their families and organizations who share the same commitment.</string>
 
 </resources>
